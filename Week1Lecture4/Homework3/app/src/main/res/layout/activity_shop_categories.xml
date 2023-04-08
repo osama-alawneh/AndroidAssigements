@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopCategories">
+
+    <TextView
+        android:id="@+id/welcome_text_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome osamamamin.alawneh@miu.edu"
+        android:textAllCaps="false"
+        style="@style/input_text_label"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/shop_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shop by Category"
+        android:layout_below="@id/welcome_text_field"
+        android:layout_centerHorizontal="true"
+        style="@style/input_text_label"
+        android:textColor="@color/black"
+        />
+
+    <RelativeLayout
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_category"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/first_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            >
+
+            <ImageView
+                android:id="@+id/books_img"
+                style="@style/shop_category_image_size"
+                android:src="@drawable/books_logo"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/books_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Books"
+                android:layout_below="@id/books_img"
+                android:layout_centerHorizontal="true"
+                style="@style/input_text_label"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <ImageView
+                android:id="@+id/clothing_img"
+                style="@style/shop_category_image_size"
+                android:src="@drawable/clothing_logo"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/clothing_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clothing"
+                android:layout_below="@id/clothing_img"
+                android:layout_centerHorizontal="true"
+                style="@style/input_text_label"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/second_item"
+            >
+
+            <ImageView
+                android:id="@+id/organic_food_img"
+                style="@style/shop_category_image_size"
+                android:src="@drawable/organic_food_logo"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/organic_food_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organic Food"
+                android:layout_below="@id/organic_food_img"
+                android:layout_centerHorizontal="true"
+                style="@style/input_text_label"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/forth_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/second_item"
+            >
+
+            <ImageView
+                android:id="@+id/medicines_img"
+                style="@style/shop_category_image_size"
+                android:src="@drawable/medicines_logo"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/medicines_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicines"
+                android:layout_below="@id/medicines_img"
+                android:layout_centerHorizontal="true"
+                style="@style/input_text_label"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
